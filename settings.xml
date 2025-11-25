@@ -5,7 +5,7 @@
 
   <servers>
     <server>
-      <id>hkhinfotech-maven-central-store</id>
+      <id>nkh-vpro-artifact-repo-maven-central-store</id>
       <username>aws</username>
       <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
     </server>
@@ -13,14 +13,14 @@
 
   <profiles>
     <profile>
-      <id>hkhinfotech-maven-central-store</id>
+      <id>nkh-vpro-artifact-repo-maven-central-store</id>
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
       <repositories>
         <repository>
-          <id>hkhinfotech-maven-central-store</id>
-          <url>https://hkhinfotech-569305412964.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
+          <id>nkh-vpro-artifact-repo-maven-central-store</id>
+          <url>https://nkh-vpro-artifact-repo-569305412964.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
         </repository>
       </repositories>
     </profile>
@@ -32,9 +32,9 @@
 
   <mirrors>
     <mirror>
-      <id>hkhinfotech-maven-central-store</id>
-      <name>hkhinfotech-maven-central-store</name>
-      <url>https://hkhinfotech-569305412964.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
+      <id>nkh-vpro-artifact-repo-maven-central-store</id>
+      <name>nkh-vpro-artifact-repo-maven-central-store</name>
+      <url>https://nkh-vpro-artifact-repo-569305412964.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
