@@ -13,10 +13,10 @@
   <profile>
     <id>default</id>
     <repositories>
-      <repository>
-        <id>codeartifact</id>
-    <url>https://domain-accountid.d.codeartifact.region.amazonaws.com/maven/maven-central-store/</url>
-      </repository>
+        <repository>
+          <id>nkh-vpro-artifact-repo-maven-central-store</id>
+          <url>https://nkh-vpro-artifact-repo-569305412964.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
+        </repository>
     </repositories>
   </profile>
 </profiles>
@@ -24,11 +24,11 @@
         <activeProfile>default</activeProfile>
     </activeProfiles>
 <mirrors>
-  <mirror>
-    <id>codeartifact</id>
-    <name>domainname--maven-central-store</name>
-    <url>https://domain-accountdid.d.codeartifact.region.amazonaws.com/maven/maven-central-store/</url>
-    <mirrorOf>*</mirrorOf>
-  </mirror>
+    <mirror>
+      <id>nkh-vpro-artifact-repo-maven-central-store</id>
+      <name>nkh-vpro-artifact-repo-maven-central-store</name>
+      <url>https://nkh-vpro-artifact-repo-569305412964.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
 </mirrors>
 </settings>
